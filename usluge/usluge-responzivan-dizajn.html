@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responzivan dizajn — Kompakt Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="usluga.css">
+</head>
+<body>
+ 
+<div class="bg-grid"></div>
+ 
+<header>
+  <nav class="nav">
+    <a href="/index.html" class="logo"><span class="mark"></span>Kompakt<span class="sub">/web</span></a>
+    <ul class="nav-links">
+      <li><a href="/index.html#pocetna">Početna</a></li>
+      <li class="nav-item">
+        <button class="dropdown-trigger active-trigger" type="button">Usluge <span class="caret">⌄</span></button>
+        <ul class="dropdown-menu">
+          <li><a href="usluge-izrada-sajtova.html" class=""><span>Izrada web sajtova</span><span class="dd-desc">Moderni, brzi i optimizovani sajtovi</span></a></li>
+          <li><a href="usluge-responzivan-dizajn.html" class="current"><span>Responzivan dizajn</span><span class="dd-desc">Besprekoran prikaz na svim uređajima</span></a></li>
+          <li><a href="usluge-web-hosting.html" class=""><span>Web Hosting</span><span class="dd-desc">Siguran i brz dom za vaš sajt</span></a></li>
+          <li><a href="usluge-seo-optimizacija.html" class=""><span>SEO Optimizacija</span><span class="dd-desc">Budite prvi na Google-u</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/index.html#paketi">Paketi i Cene</a></li>
+      <li><a href="/projekti.html">Projekti</a></li>
+      <li><a href="/index.html#proces">Kako radimo</a></li>
+      <li><a href="/index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="index.html#kontakt" class="nav-cta">Zatražite ponudu</a>
+    <button class="burger" id="burger" aria-label="Meni"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+ 
+<main>
+ 
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap page-hero-grid">
+      <div class="page-hero-inner reveal">
+        <div class="eyebrow">Usluga / 02</div>
+        <h1 class="page-title">Responzivan dizajn: besprekoran prikaz na <span class="accent">svim uređajima</span></h1>
+        <p class="page-sub">Preko 60% korisnika danas pristupa internetu putem mobilnih telefona. Ako vaš sajt nije prilagođen manjim ekranima, gubite veliki broj potencijalnih klijenata.</p>
+      </div>
+      <div class="hero-visual reveal">
+        
+<svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="360" fill="#171c26"/>
+  <rect x="60" y="70" width="200" height="130" fill="#10141c" stroke="rgba(242,239,232,0.3)"/>
+  <rect x="60" y="70" width="200" height="16" fill="#1b212d"/>
+  <rect x="76" y="102" width="168" height="10" fill="#00d9a3" opacity="0.8"/>
+  <rect x="76" y="120" width="120" height="7" fill="rgba(242,239,232,0.4)"/>
+  <rect x="76" y="136" width="80" height="46" fill="rgba(242,239,232,0.1)"/>
+  <text x="60" y="220" font-family="IBM Plex Mono" font-size="10" fill="#f2efe8" opacity="0.4">desktop</text>
+ 
+  <rect x="280" y="90" width="110" height="90" fill="#10141c" stroke="rgba(242,239,232,0.3)"/>
+  <rect x="280" y="90" width="110" height="14" fill="#1b212d"/>
+  <rect x="292" y="116" width="86" height="8" fill="#00d9a3" opacity="0.8"/>
+  <rect x="292" y="130" width="86" height="34" fill="rgba(242,239,232,0.1)"/>
+  <text x="280" y="196" font-family="IBM Plex Mono" font-size="10" fill="#f2efe8" opacity="0.4">tablet</text>
+ 
+  <rect x="404" y="80" width="56" height="112" rx="8" fill="#10141c" stroke="rgba(242,239,232,0.3)" stroke-width="1.4"/>
+  <rect x="410" y="94" width="44" height="86" fill="#1b212d"/>
+  <rect x="414" y="100" width="36" height="7" fill="#00d9a3" opacity="0.8"/>
+  <rect x="414" y="112" width="36" height="26" fill="rgba(242,239,232,0.1)"/>
+  <text x="400" y="208" font-family="IBM Plex Mono" font-size="10" fill="#ffb648" opacity="0.8">mobile</text>
+ 
+  <path d="M270 130 L278 130" stroke="#00d9a3" stroke-width="1.4" marker-end="url(#ah)"/>
+  <path d="M394 130 L402 130" stroke="#00d9a3" stroke-width="1.4" marker-end="url(#ah)"/>
+  <defs>
+    <marker id="ah" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#00d9a3"/>
+    </marker>
+  </defs>
+  <text x="60" y="270" font-family="IBM Plex Mono" font-size="12" fill="#f2efe8" opacity="0.4">breakpoints: 1180 · 720 · 380</text>
+</svg>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- INTRO + FEATURES -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="section-desc" style="margin-top:0; font-size:16.5px; max-width:720px;">Šta podrazumeva responzivan dizajn? To znači da se struktura, slike i tekstovi na vašem sajtu automatski prilagođavaju veličini ekrana sa kog korisnik pristupa.</p>
+      </div>
+      <div class="device-rows reveal">
+        <div class="device-row">
+          <div class="device-row-icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="6" y="12" width="52" height="32" rx="2" stroke="#00d9a3" stroke-width="2"/><rect x="24" y="48" width="16" height="4" fill="#00d9a3"/><rect x="18" y="52" width="28" height="3" rx="1.5" fill="#00d9a3"/></svg>
+          </div>
+          <div class="device-row-body">
+            <span class="device-row-tag">Desktop · Tablet · Mobilni</span>
+            <h3>Mobilni, tablet i desktop</h3>
+            <p>Vaš sajt će izgledati savršeno na svakom uređaju, bez izuzetka.</p>
+          </div>
+        </div>
+        <div class="device-row">
+          <div class="device-row-icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="21" stroke="#00d9a3" stroke-width="2"/><path d="M32 22v10l7 5" stroke="#00d9a3" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="device-row-body">
+            <span class="device-row-tag">UX</span>
+            <h3>Bolje korisničko iskustvo (UX)</h3>
+            <p>Nema potrebe za zumiranjem tekstova ili frustrirajućim skrolovanjem levo-desno.</p>
+          </div>
+        </div>
+        <div class="device-row">
+          <div class="device-row-icon">
+            <svg viewBox="0 0 64 64" fill="none"><rect x="22" y="8" width="20" height="48" rx="4" stroke="#00d9a3" stroke-width="2"/><circle cx="32" cy="48" r="1.6" fill="#00d9a3"/></svg>
+          </div>
+          <div class="device-row-body">
+            <span class="device-row-tag">Prioritet</span>
+            <h3>Mobile-First pristup</h3>
+            <p>Dizajniramo prvo za mobilne uređaje, osiguravajući da su najvažnije informacije uvek na dohvat ruke.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- RELATED SERVICES -->
+  <section class="related">
+    <div class="wrap">
+      <div class="related-head reveal">Ostale usluge</div>
+      <div class="related-list reveal">
+        <a class="related-item" href="usluge-izrada-sajtova.html">
+          <span>Izrada web sajtova</span><span class="arrow">→</span>
+        </a>
+        <a class="related-item" href="usluge-web-hosting.html">
+          <span>Web Hosting</span><span class="arrow">→</span>
+        </a>
+        <a class="related-item" href="usluge-seo-optimizacija.html">
+          <span>SEO Optimizacija</span><span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center;">Sledeći korak</div>
+      <h2>Proverite da li je vaš trenutni sajt prilagođen mobilnim uređajima — kontaktirajte nas za besplatnu analizu!</h2>
+      <div class="cta-actions">
+        <a href="/index.html#kontakt" class="btn btn-primary">Zatražite besplatnu analizu <span class="btn-arrow">→</span></a>
+        <a href="/index.html#paketi" class="btn btn-outline">Pogledajte pakete</a>
+      </div>
+    </div>
+  </section>
+ 
+</main>
+
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© 2026 KompaktWeb. Sva prava zadržana.</div>
+    <div>kompaktweb@gmail.com</div>
+    <div class="footer-links">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="usluga.js"></script>
+
+</body>
+</html>

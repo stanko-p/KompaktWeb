@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naši Projekti — Kompakt Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-projekti.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="mark"></span>Kompakt<span class="sub">/web</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#pocetna">Početna</a></li>
+      <li class="nav-item">
+        <button class="dropdown-trigger" type="button">Usluge <span class="caret">⌄</span></button>
+        <ul class="dropdown-menu">
+          <li><a href="usluge/usluge-izrada-sajtova.html"><span>Izrada web sajtova</span><span class="dd-desc">Moderni, brzi i optimizovani sajtovi</span></a></li>
+          <li><a href="usluge/usluge-responzivan-dizajn.html"><span>Responzivan dizajn</span><span class="dd-desc">Besprekoran prikaz na svim uređajima</span></a></li>
+          <li><a href="usluge/usluge-web-hosting.html"><span>Web Hosting</span><span class="dd-desc">Siguran i brz dom za vaš sajt</span></a></li>
+          <li><a href="usluge/usluge-seo-optimizacija.html"><span>SEO Optimizacija</span><span class="dd-desc">Budite prvi na Google-u</span></a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#paketi">Paketi i Cene</a></li>
+      <li><a href="projekti.html" class="active">Projekti</a></li>
+      <li><a href="index.html#proces">Kako radimo</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="index.html#kontakt" class="nav-cta">Zatražite ponudu</a>
+    <button class="burger" id="burger" aria-label="Meni"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="page-hero-inner">
+        <div class="eyebrow">Naši projekti</div>
+        <h1 class="page-title">Radovi na koje smo <span class="accent">ponosni.</span></h1>
+        <p class="page-sub">Zavirite u naš portfolio i uverite se u kvalitet našeg koda i dizajna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="portfolio-list">
+
+        <!-- Projekat 1: Integraq -->
+        <div class="project-row reveal">
+          <div class="project-visual">
+            <span class="project-tag">Single-Page</span>
+            <div class="device-mockup">
+              <div class="device-desktop">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <img src="images/integraq-desktop.png" alt="IntegraQ — prikaz sajta na desktopu">
+              </div>
+              <div class="device-mobile">
+                <img src="images/integraq-mobile.png" alt="IntegraQ — prikaz sajta na mobilnom telefonu">
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="eyebrow">Projekat 01</div>
+            <h3 class="project-title">Integraq</h3>
+            <p style="font-family:var(--mono); font-size:12.5px; color:var(--paper-dim); margin-bottom:16px;">integraqrs.com</p>
+            <p class="project-desc">Moderan informativni sajt dizajniran da jasno i brzo komunicira ključne vrednosti brenda. Čist korisnički interfejs sa optimizovanim performansama.</p>
+            <div class="project-meta">
+              <div>Paket <span>Kompakt (Single-Page)</span></div>
+              <div>Fokus <span>Brend &amp; konverzija</span></div>
+              <div>Uređaji <span>Desktop &amp; mobilni</span></div>
+            </div>
+            <a href="index.html#paketi" class="btn btn-outline">Vidi Kompakt paket <span class="btn-arrow">→</span></a>
+            <a href="https://integraqrs.com" target="_blank" rel="noopener" class="btn btn-primary">Poseti sajt <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Projekat 2: placeholder -->
+        <div class="project-row placeholder reveal">
+          <div class="project-visual">
+            <div class="placeholder-icon">
+              <span class="plus">+</span>
+              Rezervisano mesto
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="eyebrow">Projekat 02</div>
+            <h3 class="project-title">[Vaš sledeći projekat]</h3>
+            <p class="project-desc">Mesto rezervisano za vaš novi sajt. Javite nam se i budite sledeći u portfoliju — bez obzira da li vam treba jedna stranica ili kompletan portal.</p>
+            <div class="project-meta">
+              <div>Paket <span>Vi birate</span></div>
+              <div>Status <span>Slobodan termin</span></div>
+            </div>
+            <a href="index.html#kontakt" class="btn btn-primary">Zatražite ponudu <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center;">Spremni ste?</div>
+      <h2>Hajde da vaš projekat bude sledeći na ovoj listi.</h2>
+      <p>Izaberite paket koji vam odgovara ili nam pišite. Odgovaramo u roku od 24h.</p>
+      <div class="cta-actions">
+        <a href="index.html#paketi" class="btn btn-primary">Pogledajte pakete <span class="btn-arrow">→</span></a>
+        <a href="index.html#kontakt" class="btn btn-outline">Zatražite ponudu</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© 2026 KompaktWeb. Sva prava zadržana.</div>
+    <div>kompaktweb@gmail.com</div>
+    <div class="footer-links">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="projekti.js"></script>
+
+</body>
+</html>
