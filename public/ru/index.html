@@ -127,7 +127,7 @@
         <p class="section-desc">Начинаете новый бизнес или развиваете существующий? У нас есть подходящий пакет.</p>
       </div>
  
-      <article id="akcija" class="launch-offer reveal" aria-labelledby="offer-title"><div><span class="eyebrow">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</span><h3 id="offer-title">Полноценный сайт из 5 страниц для вашего бизнеса.</h3><p class="offer-spots"><span aria-hidden="true">●</span> Осталось только 9 мест</p><p class="offer-note">Первая консультация бесплатно. Хостинг и домен не включены.</p></div><div class="offer-action"><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><a class="btn btn-primary" href="#kontakt" data-plan="Акция — 5 страниц / 80 €">Хочу это предложение <span aria-hidden="true">↗</span></a></div></article>
+      <article id="akcija" class="launch-offer reveal" aria-labelledby="offer-title"><div><span class="eyebrow">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</span><h3 id="offer-title">Полноценный сайт из 5 страниц для вашего бизнеса.</h3><p class="offer-spots"><span aria-hidden="true">●</span> Осталось только 9 мест</p><p class="offer-note">Первая консультация бесплатно. Хостинг и домен не включены.</p></div><div class="offer-action"><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><a class="btn btn-primary" href="#kontakt" data-plan="Akcija — 5 stranica / 80 €">Хочу это предложение <span aria-hidden="true">↗</span></a></div></article>
 <div class="plans">
  
         <div class="plan reveal" style="--reveal-delay:0ms">
@@ -279,16 +279,20 @@
           <input type="hidden" name="language" value="ru"><p style="display:none;"><label>Оставьте это поле пустым: <input name="bot-field"></label></p>
           <div class="field">
             <label for="name">Имя и фамилия</label>
-            <input type="text" id="name" name="name" placeholder="Ваше имя и фамилия" required autocomplete="name">
+            <input type="text" id="name" name="ime" placeholder="Ваше имя и фамилия" required autocomplete="name">
           </div>
           <div class="field">
             <label for="email">Электронная почта</label>
             <input type="email" id="email" name="email" placeholder="name@email.com" required autocomplete="email">
           </div>
           <div class="field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="telefon" placeholder="060/123-456" required autocomplete="tel">
+          </div>
+          <div class="field">
             <label for="package">Какой пакет вас интересует?</label>
-            <select id="package" name="package">
-<option value="Акция — 5 страниц / 80 €">Акция — 5 страниц / 80 €</option>
+            <select id="package" name="paket">
+<option value="Akcija — 5 stranica / 80 €">Акция — 5 страниц / 80 €</option>
               <option value="Kompakt (Single-Page)">Kompakt (Single-Page)</option>
               <option selected value="Standard (Do 5 stranica)">Standard (до 5 страниц)</option>
               <option value="Biznis (Do 10 stranica)">Бизнес (до 10 страниц)</option>
@@ -298,10 +302,11 @@
           </div>
           <div class="field">
             <label for="project">О вашем проекте</label>
-            <textarea id="project" name="project" placeholder="Расскажите немного о вашем бизнесе и о том, что вам нужно…"></textarea>
+            <textarea id="project" name="poruka" placeholder="Расскажите немного о вашем бизнесе и о том, что вам нужно…"></textarea>
           </div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFipzFgEXNXflIvr" data-theme="auto" data-language="ru"></div>
           <button type="submit" class="btn btn-primary form-submit">Отправить запрос <span class="btn-arrow">→</span></button>
-          <div class="form-note" id="formNote" role="status" aria-live="polite"></div>
+          <div class="formStatus" id="formStatus" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -323,5 +328,7 @@
 <div class="footer-area wrap reveal">Для бизнеса в Нови-Саде и по всей Сербии.</div></footer>
 
 <dialog id="offerDialog" class="offer-dialog" aria-labelledby="popup-title" aria-describedby="popup-body"><button type="button" class="offer-close" data-offer-close aria-label="Закрыть предложение">×</button><span class="eyebrow">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</span><h2 id="popup-title">Ваш новый сайт. Меньше затрат.</h2><p id="popup-body">Полноценный сайт из 5 страниц для вашего бизнеса.</p><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><p class="offer-spots"><span aria-hidden="true">●</span> Осталось только 9 мест</p><a class="btn btn-primary" href="/ru/#akcija" data-offer-cta>Посмотреть предложение <span aria-hidden="true">↗</span></a><p class="offer-note">Первая консультация бесплатно. Хостинг и домен не включены.</p></dialog>
-<script src="/experience.js" defer></script></body>
+<script src="/experience.js" defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="/contact-form.js" defer></script></body>
 </html>

@@ -127,7 +127,7 @@
         <p class="section-desc">Whether you are just starting out or improving an existing business, we have a package for you.</p>
       </div>
  
-      <article id="akcija" class="launch-offer reveal" aria-labelledby="offer-title"><div><span class="eyebrow">SPECIAL OFFER</span><h3 id="offer-title">A complete 5-page website for your business.</h3><p class="offer-spots"><span aria-hidden="true">●</span> Only 9 spots left</p><p class="offer-note">Free initial consultation. Hosting and domain are not included.</p></div><div class="offer-action"><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><a class="btn btn-primary" href="#kontakt" data-plan="Special offer — 5 pages / €80">Get this offer <span aria-hidden="true">↗</span></a></div></article>
+      <article id="akcija" class="launch-offer reveal" aria-labelledby="offer-title"><div><span class="eyebrow">SPECIAL OFFER</span><h3 id="offer-title">A complete 5-page website for your business.</h3><p class="offer-spots"><span aria-hidden="true">●</span> Only 9 spots left</p><p class="offer-note">Free initial consultation. Hosting and domain are not included.</p></div><div class="offer-action"><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><a class="btn btn-primary" href="#kontakt" data-plan="Akcija — 5 stranica / 80 €">Get this offer <span aria-hidden="true">↗</span></a></div></article>
 <div class="plans">
  
         <div class="plan reveal" style="--reveal-delay:0ms">
@@ -262,7 +262,7 @@
 <details class="reveal" style="--reveal-delay:195ms"><summary>Can you redesign an existing website?</summary><p>Yes. We review your existing content, structure and device layouts, then suggest what to keep and what to improve in line with your goals.</p></details>
 <details class="reveal" style="--reveal-delay:195ms"><summary>Is the consultation free?</summary><p>The initial consultation is free and comes with no obligation. We discuss your needs and recommend a package that makes sense for your business.</p></details>
 <details class="reveal" style="--reveal-delay:195ms"><summary>Are the packages fixed or can they be customised?</summary><p>All packages are flexible and can be tailored to your needs. We agree on the number of pages, features and content together, and set the final price based on the agreed scope before work begins.</p></details>
-</div></div></section><section class="section-pad local-service"><div class="reveal wrap" style="--reveal-delay:0ms"><div class="eyebrow">NOVI SAD / SRBIJA</div><h2 class="section-title">Local understanding. Collaboration across Serbia.</h2><p class="section-desc">Our main focus is small businesses in Novi Sad, and we also work with clients throughout Serbia. Conversations, materials and design reviews can be handled online, with clear agreements at every stage.</p></div></section><section class="section-pad" id="kontakt" style="border-bottom:none;">
+</div></div></section><section class="section-pad local-service"><div class="reveal wrap" style="--reveal-delay:0ms"><div class="eyebrow">NOVI SAD / SERBIA</div><h2 class="section-title">Local understanding. Collaboration across Serbia.</h2><p class="section-desc">Our main focus is small businesses in Novi Sad, and we also work with clients throughout Serbia. Conversations, materials and design reviews can be handled online, with clear agreements at every stage.</p></div></section><section class="section-pad" id="kontakt" style="border-bottom:none;">
     <div class="wrap">
       <div class="contact-grid">
         <div class="contact-left reveal" style="--reveal-delay:0ms">
@@ -279,16 +279,20 @@
           <input type="hidden" name="language" value="en"><p style="display:none;"><label>Leave this field empty: <input name="bot-field"></label></p>
           <div class="field">
             <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
+            <input type="text" id="name" name="ime" placeholder="Your full name" required autocomplete="name">
           </div>
           <div class="field">
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" placeholder="name@email.com" required autocomplete="email">
           </div>
           <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="telefon" placeholder="060/123-456" required autocomplete="tel">
+          </div>
+          <div class="field">
             <label for="package">Which package interests you?</label>
-            <select id="package" name="package">
-<option value="Special offer — 5 pages / €80">Special offer — 5 pages / €80</option>
+            <select id="package" name="paket">
+<option value="Akcija — 5 stranica / 80 €">Special offer — 5 pages / €80</option>
               <option value="Kompakt (Single-Page)">Kompakt (Single-Page)</option>
               <option selected value="Standard (Do 5 stranica)">Standard (up to 5 pages)</option>
               <option value="Biznis (Do 10 stranica)">Business (up to 10 pages)</option>
@@ -298,10 +302,11 @@
           </div>
           <div class="field">
             <label for="project">About your project</label>
-            <textarea id="project" name="project" placeholder="Tell us a little about your business and what you need…"></textarea>
+            <textarea id="project" name="poruka" placeholder="Tell us a little about your business and what you need…"></textarea>
           </div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFipzFgEXNXflIvr" data-theme="auto" data-language="en"></div>
           <button type="submit" class="btn btn-primary form-submit">Send enquiry <span class="btn-arrow">→</span></button>
-          <div class="form-note" id="formNote" role="status" aria-live="polite"></div>
+          <div class="formStatus" id="formStatus" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -323,5 +328,7 @@
 <div class="footer-area wrap reveal">For businesses in Novi Sad and throughout Serbia.</div></footer>
 
 <dialog id="offerDialog" class="offer-dialog" aria-labelledby="popup-title" aria-describedby="popup-body"><button type="button" class="offer-close" data-offer-close aria-label="Close offer">×</button><span class="eyebrow">SPECIAL OFFER</span><h2 id="popup-title">Your new website. A smaller investment.</h2><p id="popup-body">A complete 5-page website for your business.</p><div class="offer-price"><del>160 €</del> <strong>80 €</strong></div><p class="offer-spots"><span aria-hidden="true">●</span> Only 9 spots left</p><a class="btn btn-primary" href="/en/#akcija" data-offer-cta>View the offer <span aria-hidden="true">↗</span></a><p class="offer-note">Free initial consultation. Hosting and domain are not included.</p></dialog>
-<script src="/experience.js" defer></script></body>
+<script src="/experience.js" defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="/contact-form.js" defer></script></body>
 </html>

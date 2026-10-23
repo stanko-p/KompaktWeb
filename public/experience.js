@@ -8,7 +8,7 @@ const messages = {
  ru:{send:'Отправить запрос',sending:'Отправка…',success:'Спасибо! Ваш запрос отправлен. Мы ответим в течение 24 часов.',error:'Не удалось отправить запрос. Попробуйте ещё раз или напишите на kompaktweb@gmail.com.',pause:'Приостановить анимацию',resume:'Включить анимацию'}
 }[lang];
 // Language is represented by actual translated static pages, so SEO and no-JS work.
-const languageLinks=document.querySelectorAll('[data-language]');
+const languageLinks=document.querySelectorAll('a[data-language]');
 function updateLanguageLinks(){languageLinks.forEach(link=>{link.href=link.dataset.localeHref+location.hash;});}
 updateLanguageLinks();window.addEventListener('hashchange',updateLanguageLinks);
 const burger=document.querySelector('#burger'),links=document.querySelector('.nav-links'),navItem=document.querySelector('.nav-item'),dd=document.querySelector('.dropdown-trigger');
