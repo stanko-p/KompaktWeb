@@ -1,4 +1,3 @@
-
 {
   "name": "kompaktweb",
   "main": "./src/index.js",
@@ -9,5 +8,13 @@
     "run_worker_first": [
       "/api/*"
     ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "head_sampling_rate": 1
+    }
   }
 }
