@@ -129,7 +129,7 @@ export async function onRequestPost({ request, env }) {
     const allowedHostnames = [
       "kompaktweb.rs",
       "www.kompaktweb.rs",
-      "kompaktweb.pages.dev"
+      "kompaktweb.stankovicpetar-ns.workers.dev"
     ];
 
     if (
