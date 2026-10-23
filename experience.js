@@ -94,19 +94,6 @@ if('IntersectionObserver'in window){
 }
 document.querySelectorAll('[data-device]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('.demo-device').dataset.view=button.dataset.device;document.querySelectorAll('[data-device]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});}));
 document.querySelectorAll('[data-plan]').forEach(a=>a.addEventListener('click',()=>{const select=document.querySelector('#package');if(select)select.value=a.dataset.plan;}));
-const form=document.querySelector('#contactForm');
-form?.addEventListener('submit',async e=>{
- e.preventDefault();if(form.dataset.busy==='true'||!form.reportValidity())return;
- const button=form.querySelector('[type=submit]'),note=document.querySelector('#formNote');
- form.dataset.busy='true';button.disabled=true;button.textContent=messages.sending;note.textContent='';
- const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);
- try{
- const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString(),signal:controller.signal});
- if(!response.ok)throw new Error('Form submission rejected');
- note.textContent=messages.success;note.dataset.state='success';form.reset();
- }catch{note.textContent=messages.error;note.dataset.state='error';}
- finally{clearTimeout(timeout);button.disabled=false;button.textContent=messages.send+' →';form.dataset.busy='false';}
-});
 
 // One dismissible entry offer per tab session, across all language routes.
 const offerDialog=document.querySelector('#offerDialog');
