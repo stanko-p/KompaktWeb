@@ -26,7 +26,13 @@ export async function onRequestPost({ request, env }) {
     ];
 
     if (!requiredVariables.every(Boolean)) {
-      console.error("Missing environment variables");
+      console.error("Missing environment variables:", {
+        NOTION_TOKEN: Boolean(env.NOTION_TOKEN),
+        NOTION_DATA_SOURCE_ID: Boolean(env.NOTION_DATA_SOURCE_ID),
+        TELEGRAM_BOT_TOKEN: Boolean(env.TELEGRAM_BOT_TOKEN),
+        TELEGRAM_CHAT_ID: Boolean(env.TELEGRAM_CHAT_ID),
+        TURNSTILE_SECRET_KEY: Boolean(env.TURNSTILE_SECRET_KEY)
+      });
 
       return json({
         error: "Server nije konfigurisan."
