@@ -44,3 +44,39 @@ html.scroll-reveals .reveal:not(.in) *,html.scroll-reveals .reveal:not(.in)::bef
 @media(max-width:650px){.launch-offer{flex-direction:column;align-items:stretch;padding:24px}.offer-action{text-align:left}.offer-action .offer-price{justify-content:flex-start}.offer-action .btn{width:100%;justify-content:center}.offer-dialog{padding:40px 24px 24px}}
 @media(prefers-reduced-motion:reduce){html.scroll-reveals .reveal{opacity:1!important;transform:none!important;transition:none!important}.offer-dialog{transition:none;transform:none}}
 @media print{html.scroll-reveals .reveal{opacity:1!important;transform:none!important}.offer-dialog{display:none!important}}
+
+/* Let grid and flex content shrink to the viewport, including native form fields. */
+html{overflow-x:hidden}
+@supports(overflow:clip){html{overflow-x:clip}}
+body{overflow-wrap:anywhere}
+.hero-layout>*,.experience-grid>*,.faq-grid>*,.contact-grid>*,.page-hero-grid>*,
+.project-row>*,.plans>*,.why-grid>*,.feature-grid>*,.process-item>*,
+.device-row>*,.status-item>*,.terminal-line>*{min-width:0}
+.field,.field input,.field select,.field textarea{min-width:0;max-width:100%}
+.contact-detail{min-width:0;flex-wrap:wrap}
+.contact-detail .dot,.logo .mark,.burger,.eyebrow::before{flex-shrink:0}
+.btn{min-width:0;max-width:100%;white-space:normal;text-align:center}
+.footer-links,.device-controls{flex-wrap:wrap}
+.offer-action{min-width:0;max-width:100%}
+.nav-links .dropdown-menu a{white-space:normal}
+.success-page{width:100%;min-width:0}
+
+/* Visible page hierarchy and direct links also work without JavaScript. */
+.breadcrumbs{margin-bottom:28px;font:12px/1.7 var(--mono);color:var(--paper-dim)}
+.breadcrumbs ol{display:flex;flex-wrap:wrap;gap:8px 12px;list-style:none}
+.breadcrumbs li{display:flex;align-items:baseline;gap:12px;min-width:0}
+.breadcrumbs li+li::before{content:'/';color:var(--signal)}
+.breadcrumbs a:hover,.footer-navigation a:hover{color:var(--signal)}
+.breadcrumbs [aria-current=page]{color:var(--paper)}
+.footer-navigation{margin-bottom:28px}
+.footer-navigation ul{display:flex;flex-wrap:wrap;gap:10px 24px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.footer-navigation a{display:inline-block;padding:6px 0;font:12px/1.6 var(--mono);color:var(--paper-dim)}
+.footer-navigation a[aria-current=page]{color:var(--signal)}
+@media(max-width:600px){
+  .form{padding:24px 20px}
+  .field input,.field select,.field textarea{font-size:16px}
+  .contact-detail{font-size:13px;gap:8px}
+  .plan{padding:30px 24px}
+  .footer-navigation ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+  .success-page h1{font-size:clamp(30px,9vw,48px)}
+}

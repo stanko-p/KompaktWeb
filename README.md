@@ -25,10 +25,17 @@ The canvas stops when off screen, when the tab is hidden, when the visitor pause
 - 53%: Google global aggregated mobile-web analytics, March 2016; abandonment for mobile visits taking longer than three seconds to load. Reported in https://blog.google/products-and-platforms/products/ads/speed-scorecard-impact-calculator/
 - +8.4%: Google-commissioned Deloitte/55 research, 2020; higher retail conversion rates observed when four speed metrics each improved by 0.1 seconds across the customer journey. This does not mean every 0.1-second change on any website produces that result. Source: https://web.dev/case-studies/milliseconds-make-millions
 
-## SEO: kompaktweb.rs, Novi Sad and Serbia
-All 18 indexable pages have unique local titles and descriptions in their own language, self-canonical URLs, reciprocal Serbian/English/Russian/x-default alternate links, and branded PNG social previews. Each service page includes relevant visible copy for Novi Sad and the rest of Serbia. The homepage and footer describe the same service area.
+## SEO: kompaktweb.rs, all of Serbia
+All 18 indexable pages have unique titles and descriptions targeting Serbia in their own language, self-canonical URLs, reciprocal Serbian/English/Russian/x-default alternate links, and branded PNG social previews. Visible headings, service introductions, homepage copy and footers describe nationwide service, including online collaboration.
 
-Structured data describes the real organisation, website, current page, breadcrumbs and individual service where applicable. Service coverage names Novi Sad and Serbia. No physical office address, phone number, review or rating has been fabricated. Thank-you pages remain noindexed and are excluded from the multilingual sitemap. Netlify configuration redirects index.html homepage variants to the preferred directory URLs and the www host to the apex domain.
+Structured data describes the real organisation, website, current page, breadcrumbs and individual service where applicable. Organisation and service coverage use the country Serbia (RS). No physical office address, phone number, review or rating has been fabricated. Thank-you pages remain noindexed and are excluded from the multilingual sitemap. Internal homepage links use the canonical directory URLs.
+
+Service and project pages have visible breadcrumbs matching their structured data. Every indexable page links directly to all service pages, projects, packages and contact in its footer. Descriptive headings and consistent internal links help Google understand the site hierarchy; Google automatically decides whether to show sitelinks. See https://developers.google.com/search/docs/appearance/sitelinks.
+
+## Analytics and mobile layout
+Every HTML head, including all three thank-you pages, contains one Google tag for `G-V2S6XTTB56`. Local browser checks block Google Analytics requests so QA visits do not enter the live property. Actual receipt of events in the owner's Analytics account must be checked after deployment.
+
+Shared responsive styles allow grid children and form fields to shrink to the viewport, wrap long text and footer links, and reduce form padding on phones. Form text uses 16px on phones to avoid input-focus zoom. Turnstile uses its supported compact size so its verification UI fits narrow form containers. All 21 pages were checked in headless Edge at 320, 375, 390, 600, 768, 1024 and 1440px, including expanded navigation: 255 layout checks passed without horizontal overflow. This is browser emulation, not a physical iPhone or Android test.
 
 After deploying, confirm https://kompaktweb.rs is the primary Netlify domain, then submit https://kompaktweb.rs/sitemap.xml in the owner's Google Search Console account. No Search Console or Google Business Profile account was accessed or configured by this update.
 
@@ -43,7 +50,7 @@ Navbar section links use native smooth scrolling with spacing for the fixed head
 ## Editing
 Shared styling: `enhancements.css`, alongside original brand stylesheets. Shared interactions: `experience.js`. Edit text directly in each language's HTML when updating copy. Package option values intentionally remain stable Serbian identifiers for form processing and preselection.
 
-External resources: Google Fonts only. System font fallbacks remain usable if unavailable. Existing social links, project destination and images were retained. Domain-based metadata assumes https://kompaktweb.rs.
+External resources: Google Fonts, Google Analytics and Cloudflare Turnstile. System font fallbacks remain usable if fonts are unavailable. Existing social links, project destination and images were retained. Domain-based metadata assumes https://kompaktweb.rs.
 
 ## Verification
 Static local links/assets, translation coverage, 18 unique SEO titles/descriptions, reciprocal language URLs, structured data and sitemap coverage were checked. Simulated browser API tests covered device hints, reduced motion, deferred startup, the frame cap, manual/background pause, both runtime performance fallbacks, flag navigation, device controls and multilingual form success/failure handling. Browser visual QA was unavailable in this environment. A real form delivery test must be performed after deployment, with Netlify form detection enabled.
