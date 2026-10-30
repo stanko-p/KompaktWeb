@@ -113,6 +113,14 @@ body{overflow-wrap:anywhere}
   .art-label{font-size:11px}
 }
 @media(max-width:600px){
+  .nav{height:80px;padding-top:18px;padding-bottom:18px}
+  .nav .logo{font-size:18px}
+  .nav .logo .sub{font-size:12px}
+  .nav .burger{width:40px;height:44px;flex-shrink:0;align-items:center;justify-content:center;gap:6px;padding:0}
+  .nav .burger span{width:26px}
+  .nav .flags a{height:44px}
+  .nav .flags img{width:25px;height:17px}
+  .nav-links.mobile-open{top:80px;max-height:calc(100dvh - 80px)}
   .hero-title{font-size:clamp(42px,11vw,58px)!important}
   h1.page-title{font-size:clamp(38px,10vw,48px)}
 }
