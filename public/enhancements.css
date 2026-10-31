@@ -81,37 +81,6 @@ body{overflow-wrap:anywhere}
   .success-page h1{font-size:clamp(30px,9vw,48px)}
 }
 
-/* A more comfortable reading scale on phones and small tablets. */
-@media(max-width:768px){
-  body{font-size:17px}
-  .hero-sub,.page-sub{font-size:18px;line-height:1.75}
-  .section-desc,.why-card p,.feature-card p,.process-body p,.contact-left p,
-  .project-desc,.device-row-body p,.status-body p,.t-text p,.faq-list p,
-  .local-intro,.service-note,.plan-for,.plan-desc,.plan-features li,
-  .check-list li,.work-caption p,.benefit-stat .stat-context,
-  .benefit-heading .section-desc{font-size:17px;line-height:1.75}
-  .faq-list summary{font-size:18px}
-  .section-title,.contact-left h2,.cta-band h2{font-size:clamp(30px,5vw,38px)}
-  .why-card h3,.feature-card h3,.device-row-body h3,.status-body h3,
-  .t-text h3,.plan-title,.process-body h3{font-size:22px}
-  .btn,.hero-actions .btn{font-size:16px;min-height:48px;padding:14px 18px;justify-content:center}
-  .hero-actions{flex-wrap:wrap}
-  .hero-actions .btn{flex:1 1 220px}
-  .nav-links{font-size:18px}
-  .dropdown-menu li a{font-size:16px}
-  .dropdown-menu li a .dd-desc{font-size:13px;line-height:1.6}
-  .field label,.eyebrow,.plan-name,.plan-note,.offer-note,.form-note,
-  .footer-area,.breadcrumbs,.project-meta div,.device-row-tag,
-  .related-head,.work-caption .eyebrow{font-size:14px;line-height:1.6}
-  .contact-detail,.footer-inner,.footer-navigation a,.text-link,
-  .project-meta div span,.related-item span{font-size:15px}
-  .field input,.field select,.field textarea{font-size:17px}
-  .formStatus{font-size:14px;line-height:1.6;height:auto;min-height:24px}
-  .device-controls button{font-size:13px;min-height:44px}
-  .demo-note,.lab-top{font-size:12px}
-  .motion-toggle{font-size:12px;white-space:normal;width:100%;text-align:center}
-  .art-label{font-size:11px}
-}
 @media(max-width:600px){
   .nav{height:80px;padding-top:18px;padding-bottom:18px}
   .nav .logo{font-size:18px}
@@ -121,6 +90,4 @@ body{overflow-wrap:anywhere}
   .nav .flags a{height:44px}
   .nav .flags img{width:25px;height:17px}
   .nav-links.mobile-open{top:80px;max-height:calc(100dvh - 80px)}
-  .hero-title{font-size:clamp(42px,11vw,58px)!important}
-  h1.page-title{font-size:clamp(38px,10vw,48px)}
 }
